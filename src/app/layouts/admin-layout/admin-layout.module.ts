@@ -7,7 +7,7 @@ import { AdminLayoutRoutes } from './admin-layout.routing';
 
 import { BridesComponent } from '../../brides/brides.component';
 import { GroomsComponent } from '../../grooms/grooms.component';
-
+import { HomepageComponent } from '../../homepage/homepage.component';
 
 @NgModule({
   imports: [
@@ -16,8 +16,9 @@ import { GroomsComponent } from '../../grooms/grooms.component';
     FormsModule
   ],
   declarations: [
+    HomepageComponent,
     BridesComponent,
-    GroomsComponent,
+    GroomsComponent
   ]
 })
 
