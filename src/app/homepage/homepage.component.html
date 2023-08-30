@@ -1,10 +1,90 @@
-<div style="margin-left: 10px;">
-    <h1>ජය මංගලම් මංගල සේවය</h1>
-    <p> Wedding Proposals Web is an elegant and feature-rich platform developed using AngularJS and Node.js, designed to
-        assist couples and event organizers in planning their dream weddings. Built upon the Bootstrap template, this
-        project encompasses a range of features including groom and bride profiles, wedding decoration services, wedding
-        hall bookings, and professional wedding photography services.</p>
-    <img src="https://cdn.stockmediaserver.com/smsimg39/pv/IngimageContributors/ing_47129_07263.jpg?token=IDvrYps30mPy4cQ8mwPdt14t-JxUTsuzhjEsaONqzj0&class=pv&smss=53&expires=4102358400"
-        alt="" />
+<div style="margin-left: 20px; margin-right: 40px;">
+
+    <h1>
+        <img class="headingimgcss"
+            src="https://cdn.shortpixel.ai/spai/w_656+q_lossless+ret_img/https://matchmaker.lk/wp-content/uploads/2020/01/sri-lanka-matrimony-header.png" />
+        ජය මංගලම් මංගල සේවය
+    </h1>
+    <hr />
+
+    <div class="center-container">
+        <img src="https://www.proposalmarriage.com/img/frontbanner.gif" alt="" />
+    </div>
+
+    <img src="https://cdn0.weddingwire.com/vendor/525489/3_2/960/jpg/-p2a0995-1_51_1984525-163288165676849.jpeg"
+        style="width: 100%;height: 500px;object-fit: cover;" alt="" />
+
+    <h2 style="text-align: center;">ආයුබෝවන්</h2>
+    <p style="text-align: justify;"> You are warmly welcome to our world wide website network. Expresslanka Matrimonial
+        service is one of our
+        services that we provide to the worldwide srilankans. We help you to find your best dream life partner in the
+        world. Our friendly customer agents will help you and guide you to achieve your target.
+
+        you can find us through sunday observer, marriage wishes, marriage registrar, marriage certificate, marriage
+        story, marriage and divorce, astrology, marriage counselling, marriage anniversary wishes, marriage act,
+        marriage visa, marriage license, family therapy, couples therapy, matrimony, dissolution of marriage, marriage
+        definition, arranged marriage, open marriage, public marriage records, average age of marriage, divorce
+        ceremony, matrimony australia, matrimony app, matrimony india, matrimony advertisement, matrimony tamil, bharat
+        matrimony, telugu matrimony, holy matrimony, matrimony services, matrimony meaning in sinhala, matrimony
+        catholic, matrimony canada, matrimony dubai, matrimony for all, second marriage, matrimony girl photos,
+        matrimony horoscope, matrimony sri lanka sinhala, etc.</p>
+
+
+    <h2 style="text-align: center;">ජය මංගලම් ගැන බිඳක්</h2>
+    <ul class="ulclass">
+        <li>Most trusted website for the Sinhalese Marriage Proposals and Sinhala Matrimonial in Sri Lanka. We offer
+            Services that deepen the trust of our members with strictly restricting to serious relationships only.</li>
+        <li>Innovation in Online Matrimony, Since 2007, JayaMangalam has touched over 90,000+ hearts. Join us today &
+            start your incredible journey to find a partner. Our leadership position is only to serve you better.</li>
+        <li>JayaMangalam is for everyone, whether you are a parent looking for marriage proposals, a brother looking to
+            help your unmarried brother/sister, a friend trying to help your best mate, or even if you are alone looking
+            to get married.</li>
+        <li>JayaMangalam provides a pleasant, satisfying, and superior matchmaking experience to our members while
+            zealously protecting their privacy and security. Every aspect of our site has been constructed with secure
+            matrimonial as the central focus.</li>
+        <li>We don't promise you the "Sun and the Moon" like other websites. We provide a process that is based on
+            respect and professionalism, and that does not compromise your privacy.</li>
+    </ul>
+
+    <h2 style="text-align: center;">Happy Stories</h2>
+
+    <div class="row">
+        <div *ngFor="let happyStorie of happyStories" class="col-lg-3">
+            <c-card>
+                <div class="HappyStoyMcard">
+                    <img cCardImg="top" class="HappyStoyImage" src={{happyStorie?.image}}>
+                    <c-card-body>
+                        <h5 cCardTitle style="font-weight:600; text-align: center; letter-spacing: 3px;width: 100%; ">
+                            {{happyStorie?.name}}</h5>
+                        <p cCardText style="text-align: center;">
+                            {{happyStorie?.description}}
+                        </p>
+                    </c-card-body>
+                </div>
+            </c-card>
+        </div>
+    </div>
+
+
+    <h2 style="text-align: center;">අපගේ සේවාවන්</h2>
+
+    <div class="row">
+        <div *ngFor="let lands of services" class="col-lg-2" style="margin-right:40px;">
+            <c-card>
+                <div class="Mcard">
+                    <img cCardImg="top" class="serviceImage" src={{lands?.image}}>
+                    <c-card-body>
+                        <h5 cCardTitle style="font-weight:600 ;">{{lands?.name}}</h5>
+                        <p cCardText>
+                            {{lands?.description}}
+                        </p>
+                    </c-card-body>
+                </div>
+            </c-card>
+        </div>
+    </div>
+
+    <br />
+    <br />
 
 </div>
