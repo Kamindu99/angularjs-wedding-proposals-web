@@ -1,0 +1,84 @@
+<div style="margin-top:10px; margin-left: 10px; margin-right: 20px;">
+
+
+    <img src="https://i0.wp.com/sarahcanningphoto.com/wp-content/uploads/2019/04/French-Creek-Spring-Wedding_0044-1800x1200.jpg?resize=960%2C640&ssl=1"
+        alt="" style="width: 100%;height: 250px;object-fit: cover; object-position: center;;" />
+
+
+    <div class="mb-5">
+        <div class="row d-flex justify-content-center mr-1">
+            <div class="col-md-12">
+                <div class="card" style="padding: 20px;">
+                    <h5>An Easier way to find Brides</h5>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-secondary btn-block">Search Results</button>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample" class="advanced">
+                            Advance Search With Filters <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <div class="collapse" id="collapseExample">
+                            <div>
+                                <div class="row mr-10">
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder="Search by District" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Search by Name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Search by Age">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-left: 10px; margin-right: 20px;">
+        <div *ngFor="let lands of landsData" class="col-lg-6 col-md-6 col-xs-12 mb-5">
+            <c-card class="Mcard">
+                <c-row class="row" style="width: 100%;">
+                    <c-col class="col-lg-4">
+                        <img src={{lands.image}} class="landImage">
+                    </c-col>
+                    <c-card-body cCol class="col-lg-8">
+                        <h4 style="font-weight: 600; margin-top:'2%';">{{ lands.name?.toUpperCase() }}</h4>
+                        <p style="margin-top: -20px;">
+                            <i class="fas fa-street-view"></i> {{lands.address}} , Sri Lanka
+                        </p>
+                        <hr style="width: 100%;" />
+                        <p class="row">
+                            <span class="col-lg-4"> <i class="fas fa-birthday-cake mr-10"></i> {{lands.age}}
+                                years</span>
+                            <span class="col-lg-4"> <i class="fas fa-quran mr-10"></i> {{lands.nation}}</span>
+                            <span class="col-lg-4"> <i class="fas fa-pray mr-10"></i> {{lands.religion}}</span>
+                        </p>
+                        <p class="row">
+                            <span class="col-lg-4"> <i class="fas fa-child mr-10"></i> {{lands.height}} </span>
+                            <span class="col-lg-4"> <i
+                                    class="fas fa-hand-holding-usd mr-10"></i>{{lands.occupation}}</span>
+                            <span class="col-lg-4"> <i class="fas fa-thumbtack mr-10"></i> {{lands.address}}</span>
+                        </p>
+                        <mat-card-actions>
+                            <div class="cardfooter">
+                                <button class="btn btn-info" mat-button>MORE DETAILS</button>
+                            </div>
+                        </mat-card-actions>
+                    </c-card-body>
+                </c-row>
+            </c-card>
+        </div>
+    </div>
+</div>

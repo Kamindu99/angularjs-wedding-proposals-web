@@ -1,0 +1,55 @@
+/* ==========================================
+    FOR DEMO PURPOSE
+  ========================================== */
+body {
+  background: rgb(15, 87, 150);
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #ffffff;
+  border-color: rgb(19, 111, 192);
+}
+
+.form-control:focus {
+  background: rgb(9, 66, 116);
+}
+
+footer {
+  background: rgb(186, 186, 186);
+
+}
+
+/* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+body,
+html {
+  height: 100%;
+}
+
+.social-icon {
+  color: white;
+  margin: 10px;
+}
+
+.headingimgcss {
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+  margin-right: 5px;
+}
