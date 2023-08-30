@@ -2,7 +2,7 @@
 
 ### [Live Site](https://jayamangalam.netlify.app/)
 
-![Wedding Proposals WebApp](https://i0.wp.com/sarahcanningphoto.com/wp-content/uploads/2019/04/French-Creek-Spring-Wedding_0044-1800x1200.jpg?resize=960%2C640&ssl=1)
+![Wedding Proposals WebApp](https://res.cloudinary.com/dmfljlyu1/image/upload/v1693411139/jaya_duwyql.jpg)
 
 Wedding Proposals Web is an elegant and feature-rich platform developed using AngularJS and Node.js, designed to assist couples and event organizers in planning their dream weddings. Built upon the Bootstrap template, this project encompasses a range of features including groom and bride profiles, wedding decoration services, wedding hall bookings, and professional wedding photography services.
 
